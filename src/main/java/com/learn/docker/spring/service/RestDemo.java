@@ -14,4 +14,12 @@ public class RestDemo {
 	public String getMessage() {
 		return message;
 	}
+	
+	@Value("${message2:Hello Code}")
+	private String message2;
+
+	@GetMapping(value = "/getMessage2")
+	public String getMessage2() {
+		return message2;
+	}
 }
