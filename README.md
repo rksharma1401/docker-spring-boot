@@ -19,7 +19,7 @@ and expose 8080 port for access
 -  echo --- >> deployment.yaml
 - kubectl create service nodeport docker-spring-boot --tcp=8080:8080 --dry-run=client -o=yaml >> deployment.yaml
 - kubectl apply -f deployment.yaml
--  kubectl port-forward <Tab> 8080:8080
+-  kubectl port-forward [tab] 8080:8080
 
  curl -v http://localhost:8080/getMessage
 
