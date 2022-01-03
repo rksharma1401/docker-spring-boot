@@ -5,7 +5,7 @@ and expose 8080 port for access
 
 
  remove taint 
-  kubectl taint nodes $(hostname) node-role.kubernetes.io/master:NoSchedule-
+ kubectl taint nodes $(hostname) node-role.kubernetes.io/master:NoSchedule-
 
 
  kubeadm init --apiserver-advertise-address $(hostname -i) --pod-network-cidr 10.5.0.0/16
