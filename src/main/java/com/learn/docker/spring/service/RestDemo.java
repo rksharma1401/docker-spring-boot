@@ -20,12 +20,12 @@ public class RestDemo {
 
 	@GetMapping(value = "/getMessage2")
 	public String getMessage2() {
-		
+		String response="";
 		try {
-			message2 =message2+ "-" + java.net.InetAddress.getLocalHost().getHostName();
+			response =message2+ "-" + java.net.InetAddress.getLocalHost().getHostName();
 		} catch (UnknownHostException e) { 
 			e.printStackTrace();
 		}
-		return message2;
+		return response;
 	}
 }
